@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="How to use hexo">
+        <meta property="og:title" content="hexo之tags标签使用(Cannot GET /tags/)">
     
 
     <!--Open Graph Description-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>How to use hexo - Yzzzzw</title>
+    <title>hexo之tags标签使用(Cannot GET /tags/) - Yzzzzw</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -165,13 +165,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>How to use hexo</h1>
+                    <h1>hexo之tags标签使用(Cannot GET /tags/)</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2019-04-26
+                            2019-05-07
                         
                     </span>
                 </div>
@@ -187,21 +187,34 @@
 
             <!-- Tags and categories -->
            
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/hexo/">#hexo</a> <a href="/tags/tags/">#tags</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
 
             <!-- Gallery -->
             
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <p>文章归类，方便查找。</p>
+<h2 id="1、输入以下命令行"><a href="#1、输入以下命令行" class="headerlink" title="1、输入以下命令行"></a>1、输入以下命令行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>这时会在在sources/tags里面有个index.md的文件，打开这个文件编辑</p>
+<h2 id="2、如果不存在type-行-添加，否则type那一行替换下面的内容。"><a href="#2、如果不存在type-行-添加，否则type那一行替换下面的内容。" class="headerlink" title="2、如果不存在type 行 添加，否则type那一行替换下面的内容。"></a>2、如果不存在type 行 添加，否则type那一行替换下面的内容。</h2><img src="/2019/05/07/tags-hexo/1557161568288.jpg" title="This is an example image">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="3、themes-对应主题-config-yml文件打开"><a href="#3、themes-对应主题-config-yml文件打开" class="headerlink" title="3、themes/对应主题/_config.yml文件打开"></a>3、themes/对应主题/_config.yml文件打开</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">Home: /</span><br><span class="line">Archives: /archives</span><br><span class="line">#Tags: /tags   将#移除，默认是移除的</span><br><span class="line">Categories: /categories</span><br><span class="line">Github:</span><br><span class="line">url: https://github.com/klugjo/hexo-theme-clean-blog</span><br><span class="line">icon: github</span><br></pre></td></tr></table></figure>
+<h2 id="4、tags-使用"><a href="#4、tags-使用" class="headerlink" title="4、tags 使用"></a>4、tags 使用</h2><p>4.1、在文章md文件中添加tags<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [args1,args2]  args1、args2根据数量添加，单个可不加中括号</span><br></pre></td></tr></table></figure></p>
+<p>4.1、在文章md文件中删除多余tags<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean 先执行清除缓存文件和已静态文件</span><br><span class="line">$ hexo s 重启服务在能看到清除多余的tags</span><br></pre></td></tr></table></figure></p>
 
 
                 
